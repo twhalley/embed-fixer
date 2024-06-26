@@ -14,7 +14,7 @@ intents.message_content = True
 client = discord.Client(intents=intents)
 
 # Precompile the regex for better performance
-url_pattern = re.compile(r'(https://reddit\.com|https://instagram\.com|https://twitter\.com|https://youtube\.com|https://tiktok\.com|https://x\.com)')
+url_pattern = re.compile(r'(reddit\.com|instagram\.com|twitter\.com|youtube\.com|tiktok\.com|x\.com)')
 ignore_patterns = re.compile(r'rxddit\.com|ddinstagram\.com|vxtwitter\.com|koutube\.com|vxtiktok\.com|fixupx\.com')
 
 # Dictionary for replacements
