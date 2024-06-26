@@ -15,6 +15,7 @@ client = discord.Client(intents=intents)
 
 # Precompile the regex for better performance
 url_pattern = re.compile(r'(reddit\.com|instagram\.com|twitter\.com|youtube\.com|tiktok\.com|x\.com)')
+ignore_patterns = re.compile(r'rxddit\.com|ddinstagram\.com|vxtwitter\.com|koutube\.com|vxtiktok\.com|fixupx\.com')
 
 # Dictionary for replacements
 replacements = {
@@ -22,8 +23,8 @@ replacements = {
     'instagram.com': 'ddinstagram.com',
     'twitter.com': 'vxtwitter.com',
     'youtube.com': 'koutube.com',
-    'tiktok.com':  'vxtiktok.com',
-    'x.com':  'fixupx.com'
+    'tiktok.com': 'vxtiktok.com',
+    'x.com': 'fixupx.com'
 }
 
 @client.event
@@ -36,6 +37,10 @@ async def on_message(message):
         return
 
     original_content = message.content
+
+    # Check for the specific URLs to ignore
+    if ignore_patterns.search(original_content):
+        return
 
     # Perform the substitution in one pass
     new_content = url_pattern.sub(lambda match: replacements[match.group(0)], original_content)
