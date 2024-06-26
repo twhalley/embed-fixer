@@ -11,6 +11,10 @@ A Discord bot that will repost reddit, twitter to rxddit, vxtwitter, etc.
 
 ![alt text](image.png)
 
+Your DISCORD_BOT_TOKEN can be found here.
+
+![alt text](image-1.png)
+
 ## Run pod
 ```bash
 podman run --network host -e DISCORD_BOT_TOKEN="yourtokenhere" embed-fixer
