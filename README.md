@@ -15,6 +15,11 @@ Your DISCORD_BOT_TOKEN can be found here.
 
 ![alt text](image-1.png)
 
+## Build pod
+```bash
+podman build -t embed-fixer .
+```
+
 ## Run pod
 ```bash
 podman run --network host -e DISCORD_BOT_TOKEN="yourtokenhere" --read-only --cap-drop=ALL --security-opt=no-new-privileges embed-fixer
