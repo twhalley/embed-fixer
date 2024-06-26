@@ -22,8 +22,5 @@ RUN chown -R discordbot:discordbot /app
 # Switch to the non-root user
 USER discordbot
 
-# Make port 80 available to the world outside this container
-#EXPOSE 80
-
 # Run bot.py when the container launches
 CMD ["python", "bot.py"]
