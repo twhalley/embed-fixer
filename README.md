@@ -17,5 +17,13 @@ Your DISCORD_BOT_TOKEN can be found here.
 
 ## Run pod
 ```bash
-podman run --network host -e DISCORD_BOT_TOKEN="yourtokenhere" embed-fixer
+podman run --network host -e DISCORD_BOT_TOKEN="yourtokenhere" --read-only --cap-drop=ALL --security-opt=no-new-privileges embed-fixer
+```
+
+## Pod params
+```bash
+--network host: Ensures the container uses the host’s network stack, bypassing the need for TUN/TAP devices.
+--read-only: Makes the filesystem read-only.
+--cap-drop=ALL: Drops all Linux capabilities, ensuring the container runs with the least privileges.
+--security-opt=no-new-privileges: Ensures the container processes cannot gain new privileges.
 ```
