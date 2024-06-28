@@ -14,8 +14,8 @@ intents.message_content = True
 client = discord.Client(intents=intents)
 
 # Precompile the regex for better performance
-url_pattern = re.compile(r'(https:\/\/reddit\.com\/|https:\/\/instagram\.com\/|https:\/\/twitter\.com\/|https:\/\/youtube\.com\/|https:\/\/tiktok\.com\/|https:\/\/x\.com\/)')
-ignore_patterns = re.compile(r'rxddit\.com|ddinstagram\.com|vxtwitter\.com|koutube\.com|vxtiktok\.com|fixupx\.com')
+url_pattern = re.compile(r'https?://(www\.)?(reddit\.com|instagram\.com|twitter\.com|youtube\.com|tiktok\.com|x\.com)')
+ignore_patterns = re.compile(r'https?://(www\.)?(rxddit\.com|ddinstagram\.com|vxtwitter\.com|koutube\.com|vxtiktok\.com|fixupx\.com)')
 
 # Dictionary for replacements
 replacements = {
@@ -42,8 +42,13 @@ async def on_message(message):
     if ignore_patterns.search(original_content):
         return
 
+    # Function to perform replacement
+    def replace_urls(match):
+        domain = match.group(2)  # Extract the domain part
+        return match.group(0).replace(domain, replacements.get(domain, domain))
+
     # Perform the substitution in one pass
-    new_content = url_pattern.sub(lambda match: replacements[match.group(0)], original_content)
+    new_content = url_pattern.sub(replace_urls, original_content)
 
     # Only perform I/O operations if changes were made
     if new_content != original_content:
