@@ -40,3 +40,6 @@ podman run --network host -e DISCORD_BOT_TOKEN="yourtokenhere" --read-only --cap
 --cap-drop=ALL: Drops all Linux capabilities, ensuring the container runs with the least privileges.
 --security-opt=no-new-privileges: Ensures the container processes cannot gain new privileges.
 ```
+
+## Add this bot to your server.
+[Click here.](https://discord.com/oauth2/authorize?client_id=1255464592390361128)
