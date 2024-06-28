@@ -1,5 +1,5 @@
 # embed-fixer
-A Discord bot that will repost reddit, twitter to rxddit, vxtwitter, etc.
+A Discord bot that will repost messages containing popular social media platforms to contain the fixed embeded versions of the urls (rxddit.com, ddinstagram.com, vxtwitter.com, koutube.com, vxtiktok.com, fixupx.com).
 
 ## Create a Discord Bot:
 
