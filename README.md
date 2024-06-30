@@ -45,7 +45,7 @@ podman run --network host -e DISCORD_BOT_TOKEN="yourtokenhere" --read-only --cap
 [Click here.](https://discord.com/oauth2/authorize?client_id=1255464592390361128)
 
 ## Donate
-https://buymeacoffee.com/donw16
+- https://buymeacoffee.com/donw16
 - XMR: 84jWayVVFGdSLjGLWSw1cKc4rWsocYz3XEctEggK2m7s6Lw46xirDWMac6NWQgUc5pDKVmTK6QGFbXrzUkDBuinRPRun6f7
 - BTC: 3QYqpUdrinrmyJSrdBuTwgXpnYzHt5KaGj
 - LTC: MCi1rHR6Yy9crMDxHGgkBgQMxUpFzt55us
