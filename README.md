@@ -44,6 +44,10 @@ podman run --network host -e DISCORD_BOT_TOKEN="yourtokenhere" --read-only --cap
 ## Add this bot to your server
 [Click here.](https://discord.com/oauth2/authorize?client_id=1255464592390361128)
 
+## Preview
+
+https://github.com/DonW16/embed-fixer/assets/33807357/bf3c029c-b1b6-4888-91ca-480d875ea153
+
 ## Donate
 - https://buymeacoffee.com/donw16
 - XMR: 84jWayVVFGdSLjGLWSw1cKc4rWsocYz3XEctEggK2m7s6Lw46xirDWMac6NWQgUc5pDKVmTK6QGFbXrzUkDBuinRPRun6f7
