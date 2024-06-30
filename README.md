@@ -1,5 +1,5 @@
 # embed-fixer
-A Discord bot that will repost messages containing popular social media platforms to contain the fixed embeded versions of the urls (rxddit.com, ddinstagram.com, vxtwitter.com, koutube.com, vxtiktok.com, fixupx.com).
+Embed fixer is a FOSS Discord bot that modifies specific URLs in messages by replacing them with embed fixed versions of popular social media websites (rxddit.com, ddinstagram.com, vxtwitter.com, koutube.com, vxtiktok.com, fixupx.com) and then re posts the modified message in the channel.
 
 ## Create a Discord Bot:
 
