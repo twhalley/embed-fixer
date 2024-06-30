@@ -46,7 +46,7 @@ podman run --network host -e DISCORD_BOT_TOKEN="yourtokenhere" --read-only --cap
 
 ## Donate
 https://buymeacoffee.com/donw16
-XMR: 84jWayVVFGdSLjGLWSw1cKc4rWsocYz3XEctEggK2m7s6Lw46xirDWMac6NWQgUc5pDKVmTK6QGFbXrzUkDBuinRPRun6f7
-BTC: 3QYqpUdrinrmyJSrdBuTwgXpnYzHt5KaGj
-LTC: MCi1rHR6Yy9crMDxHGgkBgQMxUpFzt55us
-ETH: 0xf1a1929772F6CdC22594B88b53842a4Da594172e
+- XMR: 84jWayVVFGdSLjGLWSw1cKc4rWsocYz3XEctEggK2m7s6Lw46xirDWMac6NWQgUc5pDKVmTK6QGFbXrzUkDBuinRPRun6f7
+- BTC: 3QYqpUdrinrmyJSrdBuTwgXpnYzHt5KaGj
+- LTC: MCi1rHR6Yy9crMDxHGgkBgQMxUpFzt55us
+- ETH: 0xf1a1929772F6CdC22594B88b53842a4Da594172e
